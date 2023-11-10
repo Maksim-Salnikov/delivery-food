@@ -570,6 +570,136 @@ template {
   line-height: 32px;
 }
 
+.food {
+  padding-bottom: 100px;
+}
+.food-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.food-top__tittle {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-right: 30px;
+}
+.food-top-stars {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+}
+.food-top-stars__image {
+  margin-right: 7.5px;
+}
+.food-top-stars__text {
+  color: #FFC107;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.food-top__price {
+  color: #8C8C8C;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-right: 10px;
+}
+.food-top__point {
+  margin-right: 10px;
+}
+.food-top__eat {
+  color: #8C8C8C;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.food-bot {
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(2, 414px);
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 30px;
+}
+.food-bot-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 240px 24px 30px 24px;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+.food-bot-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 212px;
+}
+.food-bot-card__tittle {
+  margin: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.food-bot-card__composition {
+  margin: 0;
+  color: #8C8C8C;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+.food-bot-card-wrapper {
+  display: flex;
+  align-items: center;
+}
+.food-bot-card-wrapper__button {
+  padding: 8px 36px 8px 16px;
+  background-color: #1890FF;
+  border: none;
+  border-radius: 2px;
+  background-image: url(../img/basket-blue.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 32px;
+}
+.food-bot-card-wrapper__price {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
 .footer {
   background-color: #fff;
   padding: 60px 0;
