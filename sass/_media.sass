@@ -1,0 +1,121 @@
+@media (max-width: 1210px)
+  .container
+    width: 970px
+  .header
+    &-form
+      width: 500px
+  .restaurants
+    &-bot
+      grid-template-columns: repeat(2, 1fr)
+      &-card
+        padding: 220px 24px 35px 24px
+        &__tittle
+          flex-basis: 79%
+        &__image
+          width: 100%
+          height: 200px
+  .food
+    &-bot
+      &-card
+        padding: 200px 24px 30px 24px
+        justify-content: space-between
+        &__image
+          width: 100%
+          min-height: 175px
+        &__tittle
+          font-size: 19px
+        &__composition
+          font-size: 17px
+@media (max-width: 992px)
+  .container
+    width: 745px
+  .header
+    &-form
+      width: 350px
+  .restaurants
+    &-bot
+      grid-template-columns: repeat(2, 1fr)
+      &-card
+        padding: 260px 24px 35px 24px
+        &__image
+          height: 240px
+  .food
+    &-bot
+      grid-template-columns: repeat(2, 1fr)
+@media (max-width: 768px)
+  .container
+    width: 550px
+  .header
+    &-wrapper
+      flex-wrap: wrap
+    &-form
+      order: 1
+      width: 100%
+      margin-top: 10px
+  .restaurants
+    &-bot
+      &-card
+        padding: 200px 24px 35px 24px
+        &__tittle
+          flex-basis: 74%
+        &__image
+          height: 170px
+        &-stars
+          margin-right: 14px
+  .food
+    &-bot
+      &-card
+        &__image
+          width: 100%
+          min-height: 145px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &-links
+      width: 100%
+      display: flex
+      justify-content: space-between
+      order: 1
+      margin: 0
+      margin-top: 10px
+      &-item
+        margin: 0
+@media (max-width: 576px)
+  .container
+    width: 300px
+  .header
+    &-logo
+      margin: auto
+    &-form
+      width: 100%
+    &-buttons
+      width: 100%
+      justify-content: space-between
+  .welcome
+    display: none
+  .restaurants
+    &-top
+      flex-wrap: wrap
+      &__tittle
+        margin-bottom: 10px
+      &-form
+        width: 100%
+    &-bot
+      grid-template-columns: repeat(1, 1fr)
+      &-card
+        padding: 230px 24px 35px 24px
+        &__image
+          height: 200px
+  .food
+    &-top
+      flex-wrap: wrap
+    &-bot
+      grid-template-columns: repeat(1, 1fr)
+  .footer
+    &-links
+      &-item
+        &__link
+          font-size: 13px
+@media (max-width: 320px)
+  .container
+    width: 280px
