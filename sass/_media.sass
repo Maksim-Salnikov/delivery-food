@@ -80,6 +80,9 @@
       margin-top: 10px
       &-item
         margin: 0
+  .modal
+    &-basket
+      width: 550px
 @media (max-width: 576px)
   .container
     width: 300px
@@ -116,6 +119,33 @@
       &-item
         &__link
           font-size: 13px
+  .modal
+    &-basket
+      width: 300px
+      &-middle
+        &-row
+          flex-wrap: wrap
+          height: 85px
+          &__text
+            flex-basis: 100%
+          &__price
+            margin: 0
+      &-bot
+        flex-wrap: wrap
+        &__price
+          flex-basis: 100%
+          margin-bottom: 10px
+          text-align: center
+        &__confirmation
+          margin: 0
+          margin-bottom: 10px
+          width: 100%
+        &__cancel
+          margin-bottom: 10px
+          width: 100%
 @media (max-width: 320px)
   .container
     width: 280px
+  .modal
+    &-basket
+      width: 280px

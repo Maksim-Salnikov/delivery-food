@@ -758,6 +758,156 @@ template {
   text-decoration: none;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: none;
+}
+.modal-basket {
+  padding: 41px 45px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: auto;
+  width: 780px;
+  min-height: 552px;
+  z-index: 101;
+}
+.modal-basket-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.modal-basket-top__tittle {
+  margin: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.modal-basket-top-button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.modal-basket-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 53px;
+}
+.modal-basket-middle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 43px;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 15px;
+}
+.modal-basket-middle-row__text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.modal-basket-middle-row__price {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-left: auto;
+  margin-right: 48px;
+}
+.modal-basket-middle-row__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 115px;
+}
+.modal-basket-middle-row__button {
+  border-radius: 2px;
+  border: 1px solid #40A9FF;
+  background-color: #FFF;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 16px;
+  color: #40A9FF;
+  cursor: pointer;
+}
+.modal-basket-middle-row__number {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+.modal-basket-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-basket-bot__price {
+  padding: 15px 20px;
+  color: #FAFAFA;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 5px;
+  background-color: #262626;
+}
+.modal-basket-bot__confirmation {
+  padding: 8px 16px;
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 2px;
+  background-color: #1890FF;
+  border: 1px solid #1890FF;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 18px;
+}
+.modal-basket-bot__cancel {
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #D9D9D9;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+  cursor: pointer;
+}
+
+.visible {
+  display: flex;
+}
+
 @media (max-width: 1210px) {
   .container {
     width: 970px;
@@ -855,6 +1005,9 @@ template {
   .footer-links-item {
     margin: 0;
   }
+  .modal-basket {
+    width: 550px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -900,9 +1053,42 @@ template {
   .footer-links-item__link {
     font-size: 13px;
   }
+  .modal-basket {
+    width: 300px;
+  }
+  .modal-basket-middle-row {
+    flex-wrap: wrap;
+    height: 85px;
+  }
+  .modal-basket-middle-row__text {
+    flex-basis: 100%;
+  }
+  .modal-basket-middle-row__price {
+    margin: 0;
+  }
+  .modal-basket-bot {
+    flex-wrap: wrap;
+  }
+  .modal-basket-bot__price {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .modal-basket-bot__confirmation {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .modal-basket-bot__cancel {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 @media (max-width: 320px) {
   .container {
+    width: 280px;
+  }
+  .modal-basket {
     width: 280px;
   }
 }/*# sourceMappingURL=style.css.map */

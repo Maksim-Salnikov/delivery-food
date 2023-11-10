@@ -41,7 +41,7 @@
               />
               <span class="header-buttons-login__text">Войти</span>
             </button>
-            <button class="header-buttons-basket">
+            <button class="header-buttons-basket" id="card-button">
               <img
                 src="img/icon-basket.svg"
                 alt="icon: login"
@@ -281,5 +281,83 @@
       </div>
     </footer>
     <!-- /.footer -->
+    <div class="modal" id="modal-window">
+      <div class="modal-basket">
+        <div class="modal-basket-top">
+          <h3 class="modal-basket-top__tittle">Корзина</h3>
+          <button class="modal-basket-top-button" id="exit-button">
+            <img
+              src="../img/exit.svg"
+              alt="icon: exit"
+              class="modal-basket-top-button__image"
+            />
+          </button>
+        </div>
+        <div class="modal-basket-middle">
+          <div class="modal-basket-middle-row">
+            <span class="modal-basket-middle-row__text"
+              >Ролл угорь стандарт</span
+            >
+            <span class="modal-basket-middle-row__price">250 ₽</span>
+            <div class="modal-basket-middle-row__wrapper">
+              <button class="modal-basket-middle-row__button">-</button>
+              <span class="modal-basket-middle-row__number">1</span>
+              <button class="modal-basket-middle-row__button">+</button>
+            </div>
+          </div>
+          <div class="modal-basket-middle-row">
+            <span class="modal-basket-middle-row__text"
+              >Ролл угорь стандарт</span
+            >
+            <span class="modal-basket-middle-row__price">250 ₽</span>
+            <div class="modal-basket-middle-row__wrapper">
+              <button class="modal-basket-middle-row__button">-</button>
+              <span class="modal-basket-middle-row__number">1</span>
+              <button class="modal-basket-middle-row__button">+</button>
+            </div>
+          </div>
+          <div class="modal-basket-middle-row">
+            <span class="modal-basket-middle-row__text"
+              >Ролл угорь стандарт</span
+            >
+            <span class="modal-basket-middle-row__price">250 ₽</span>
+            <div class="modal-basket-middle-row__wrapper">
+              <button class="modal-basket-middle-row__button">-</button>
+              <span class="modal-basket-middle-row__number">1</span>
+              <button class="modal-basket-middle-row__button">+</button>
+            </div>
+          </div>
+          <div class="modal-basket-middle-row">
+            <span class="modal-basket-middle-row__text"
+              >Ролл угорь стандарт</span
+            >
+            <span class="modal-basket-middle-row__price">250 ₽</span>
+            <div class="modal-basket-middle-row__wrapper">
+              <button class="modal-basket-middle-row__button">-</button>
+              <span class="modal-basket-middle-row__number">1</span>
+              <button class="modal-basket-middle-row__button">+</button>
+            </div>
+          </div>
+          <div class="modal-basket-middle-row">
+            <span class="modal-basket-middle-row__text"
+              >Ролл угорь стандарт</span
+            >
+            <span class="modal-basket-middle-row__price">250 ₽</span>
+            <div class="modal-basket-middle-row__wrapper">
+              <button class="modal-basket-middle-row__button">-</button>
+              <span class="modal-basket-middle-row__number">1</span>
+              <button class="modal-basket-middle-row__button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-basket-bot">
+          <div class="modal-basket-bot__price">1250 ₽</div>
+          <button class="modal-basket-bot__confirmation">Оформить заказ</button>
+          <button class="modal-basket-bot__cancel">Отмена</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+    <script src="js/main.js"></script>
   </body>
 </html>
